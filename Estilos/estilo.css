@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+
+body {
+    background-color: rgb(48, 80, 137);
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255) 3px,
+      transparent 3px
+    );
+    background-size: 100% 40px;
+    background-repeat: repeat-y repeat-x;
+}
+
+nav {
+    font-family:'Lucida Sans';
+    font-size: 18px;
+    background-color: rgba(94, 53, 59);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+}
+
+nav a {
+    float: left;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:white;
+    color: rgba(94, 53, 59);
+}
+
+body header h2 {
+    padding-left: 4px;
+    width: 188px;
+    margin: 44px 2px; /*Arriba - Izquierda*/
+    color: white;
+    background-color: rgb(48, 80, 137);
+    font-family: 'Damion', cursive;
+    font-size: 58px;
+    border-radius: 4px;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+body header h1 {
+    padding-left: 4px;
+    height: 84px;
+    width: 368px;
+    margin: -76px 2px; /*Arriba - Izquierda*/
+    background-color: rgb(48, 80, 137);
+    border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 84px;
+    color: white;  
+    text-shadow: 14px 6px 0px rgba(94, 53, 59);
+}
+
+body header h3 {
+    padding-left: 8px;
+    width: 168px;
+    background-color: rgb(48, 80, 137);
+    font-size: 34px;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:92px 196px; /*Arriba - Izquierda*/
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    animation: blinkText 1s infinite alternate; /*Animacion*/
+}
+
+@keyframes blinkText {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra negra al inicio */
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(255, 255, 255); /* Sombra blanca más intensa al final */
+    }
+}
+body header img {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    height: 70%; /* Altura */
+    width: auto; 
+}
+
+main h2 {
+    padding-left: 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    background-color: rgb(48, 80, 137);
+    width: 422px;
+}
+
+main p {
+    padding-left: 4px;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(48, 80, 137);
+    width: 780px;
+    margin:-16px 2px; /*Arriba - Izquierda*/
+}
+
+main video {
+    padding-left: 4px;
+    box-shadow: 2px 2px 10px #030303;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+main aux h2 {
+    padding-left: 4px;
+    margin-left: 240px;
+    margin-top: 4px;
+    width: 248px;
+}
+
+main aux p {
+    padding-left: 4px;
+    margin-left: 240px;
+    width: 1090px;
+    margin-bottom: -10px;
+}
+
+footer {
+    width: 99%;
+    background: rgba(94, 53, 59);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    padding: 4px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin-right: 22px;
+    text-align: center;
+    color: white;
+    font-family: 'Arial';
+    font-size: 13px;
+}
+
+.fb img[src="/Recursos/Imagenes/msg.png"] {
+    width: 50px;
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+}
+
+body.comp main h2{
+    padding-left: 4px;
+    width: 588px;
+}
+
+body.comp main p {
+    padding-left: 4px;
+    width: 760px;
+    height: 98px;
+}
+
+body.comp main img.zapatos {
+    position: absolute;
+    top: 490px;
+    left: 960px;
+    height: 30%; /* Altura */
+    width: auto; 
+}
+
+body.comp main img.camisas {
+    position: absolute;
+    top: 750px;
+    left: 1000px;
+    height: 36%; /* Altura */
+    width: auto; 
+}
+
+body.comp main img.accesorios {
+    position: absolute;
+    top: 1032px;
+    left: 1000px;
+    height: 26%; /* Altura */
+    width: auto; 
+}
+
+button {
+    position: absolute;
+    top: 674px;
+    left: 1010px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.582);
+    background-color: #00c52b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transition: background-color 0.4s;
+    background-color: #00ee34;
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.582);
+}
+
+body.quien main h2 {
+    width: 154px;
+}
+
+body.quien main h2.aux {
+    width: 400px;
+}
+
+body.quien main p {
+    width: 760px;;
+}
+
+body.quien main img.dibujo {
+    position: absolute;
+    top: 470px;
+    height: 60%; /* Altura */
+    width: auto; 
+}
+
+body.quien main p.aux {
+    padding-left: 668px;
+    width: 658px;
+    margin-top: 4px;
+}
+
+ul {
+    padding-left: 668px;
+    width: 658px;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(48, 80, 137);
+}
